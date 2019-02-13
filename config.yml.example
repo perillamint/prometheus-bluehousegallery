@@ -1,0 +1,5 @@
+petitions:
+  - 1337
+metrics:
+  refreshInterval: 10000
+  port: 3000
