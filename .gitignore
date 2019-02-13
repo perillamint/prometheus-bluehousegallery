@@ -1,0 +1,6 @@
+*.swp
+*.swo
+config.yml
+.eslintcache
+.nyc_output/
+node_modules/
