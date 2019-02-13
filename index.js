@@ -37,6 +37,18 @@ function updateAllPetitions() {
     }
 }
 
+function exit() {
+    process.exit(0);
+}
+
+process.on('SIGINT', () => {
+    exit();
+});
+
+process.on('SIGTERM', () => {
+    exit();
+});
+
 setInterval(() => {
     updateAllPetitions();
 }, config.metrics.refreshInterval);
